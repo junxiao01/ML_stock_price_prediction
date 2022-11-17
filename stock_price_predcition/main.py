@@ -3,12 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import torch
 
-from data.dataset import SingleStockDataset
+from dataset.dataset import SingleStockDataset
 from torch.utils.data import DataLoader
 from models.arch.LSTMModel_arch import LSTMModel
 
 import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
 
 class Normalizer():
